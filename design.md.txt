@@ -1,0 +1,105 @@
+# Design Document – AI-Powered Social Media Content Planner & Optimizer
+
+## Overview
+The AI-Powered Social Media Content Planner & Optimizer is a web-based application designed to help users generate, plan, and optimize social media content using Artificial Intelligence. The system focuses on simplicity, usability, and effective AI integration for real-world content workflows.
+
+---
+
+## System Architecture
+The application follows a client–server architecture integrated with an AI engine.
+
+### High-Level Architecture Flow
+User  
+→ Web Interface (Frontend)  
+→ Backend API (Python Flask)  
+→ AI Engine (AWS Bedrock / LLM)  
+→ Generated Content  
+→ Displayed on User Dashboard  
+
+---
+
+## Component Description
+
+### 1. Frontend
+- Collects user inputs such as platform, tone, audience, and content category
+- Displays generated captions, hashtags, and weekly content calendar
+- Provides a simple and intuitive user interface
+
+**Technologies:**
+- HTML, CSS, JavaScript / React
+
+---
+
+### 2. Backend
+- Handles incoming requests from the frontend
+- Constructs prompts for the AI engine
+- Processes and formats AI-generated responses
+- Sends results back to the frontend
+
+**Technologies:**
+- Python
+- Flask framework
+
+---
+
+### 3. AI Engine
+- Uses Large Language Models to generate content
+- Produces captions, hashtags, CTAs, and content ideas
+- Optimizes content based on selected platform and tone
+
+**Technologies:**
+- AWS Bedrock (LLM services)
+
+---
+
+## Use Case Flow
+1. User opens the application
+2. User selects social media platform and content preferences
+3. User submits the form
+4. Backend sends a request to the AI engine
+5. AI generates optimized content
+6. Results are displayed to the user
+
+---
+
+## Functional Modules
+
+### Content Generation Module
+- Generates platform-specific captions
+- Suggests relevant hashtags and CTAs
+
+### Content Planning Module
+- Creates a weekly content calendar
+- Provides daily post ideas
+
+### Content Optimization Module
+- Improves user-provided captions
+- Adjusts tone and engagement level
+
+---
+
+## Wireframe Description (Optional)
+- **Home Page:** Input form for platform, audience, and tone
+- **Results Page:** Generated captions and weekly planner
+- **Optimization Page:** Improved captions and suggestions
+
+---
+
+## Technology Stack
+- Frontend: HTML, CSS, JavaScript / React  
+- Backend: Python (Flask)  
+- AI Services: AWS Bedrock  
+- Deployment: AWS (Optional)
+
+---
+
+## Scalability & Future Enhancements
+- Support for more social media platforms
+- User authentication and saved content history
+- Integration with social media scheduling tools
+- Analytics for engagement tracking
+
+---
+
+## Conclusion
+The proposed design ensures a scalable, user-friendly, and efficient AI-driven system that enhances digital content creation and planning while maintaining simplicity and real-world applicability.
